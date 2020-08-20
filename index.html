@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>modal</title>
+</head>
+<body>
+<section class="common-section">
+    <div class="common-inner">
+        <h1 class="common__title">Beautiful Images</h1>
+    </div>
+    <div class="common-inner">
+        <div class="col3 list">
+            <figure><img src="img/photo01.jpg" alt="NY"></figure>
+            <figure><img src="img/photo02.jpg" alt="LA"></figure>
+            <figure><img src="img/photo03.jpg" alt="TOKYO"></figure>
+        </div>
+    </div>
+</section>
+
+<section class="common-section" id="modal-section">
+    <div class="common-inner">
+        <div class="col2 trigger" data-modal-open="modal-1">
+            <div class="col-head">
+                <figure><img src="img/photo01.jpg" alt="NY"></figure>
+            </div>
+            <div class="col-body">
+                <h1>NY</h1>
+                <article>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </article>
+            </div>
+        </div>
+        <div class="col2 trigger" data-modal-open="modal-2">
+            <div class="col-head">
+                <figure><img src="img/photo02.jpg" alt="LA"></figure>
+            </div>
+            <div class="col-body">
+                <h1>LA</h1>
+                <article>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </article>
+            </div>
+        </div>
+        <div class="col2 trigger" data-modal-open="modal-3">
+            <div class="col-head">
+                <figure><img src="img/photo03.jpg" alt="TOKYO"></figure>
+            </div>
+            <div class="col-body">
+                <h1>TOKYO</h1>
+                <article>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </article>
+            </div>
+        </div>
+
+        <!-- modal -->
+        <div class="clModal" data-modal="modal-1">
+            <div class="modal-bg"></div>
+                <div class="modal-content">
+                    <div class="modal-inner">
+                    <div id="close">
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <figure><img src="img/photo01.jpg" alt="NY"></figure>
+                    <h1>NY</h1>
+                    <article>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="clModal" data-modal="modal-2">
+            <div class="modal-bg"></div>
+            <div class="modal-content">
+                <div class="modal-inner">
+                    <div id="close">
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <figure><img src="img/photo02.jpg" alt="LA"></figure>
+                    <h1>LA</h1>
+                    <article>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="clModal" data-modal="modal-3">
+            <div class="modal-bg"></div>
+            <div class="modal-content">
+                <div class="modal-inner">
+                    <div id="close">
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <figure><img src="img/photo03.jpg" alt="TOKYO"></figure>
+                    <h1>TOKYO</h1>
+                    <article>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </article>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
